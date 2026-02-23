@@ -1,7 +1,44 @@
+# Dependencies
 node_modules/
+
+# Build output
 dist/
+
+# Cloudflare
 .wrangler/
 .dev.vars
-*.log
-.pm2/
+
+# Runtime data
 pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Logs
+*.log
+npm-debug.log*
+
+# PM2
+.pm2/
+
+# dotenv environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.backup
+*.bak
+*.tar.gz
+*.zip

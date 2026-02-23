@@ -18,7 +18,8 @@
 ## Live URLs
 
 - **Production**: https://eugene-solutions-llc.pages.dev
-- **Sandbox**: https://3000-ipw1626of1rhut3vwgqgc-5c13a017.sandbox.novita.ai
+- **GitHub**: https://github.com/rjbizsolution23-wq/eugene-solutions-llc
+- **Original Site**: https://eugenesolutionsllc.net/
 
 ## Complete Page Inventory (25 Routes)
 
