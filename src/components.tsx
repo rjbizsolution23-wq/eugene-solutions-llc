@@ -199,6 +199,18 @@ export const Footer: FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Made by RJ Business Solutions */}
+      <div class="border-t border-blue-900 bg-blue-950">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+          <p class="text-blue-400 text-xs text-center">
+            Made by{' '}
+            <a href="https://rjbusinesssolutions.org" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">
+              RJ Business Solutions
+            </a>
+          </p>
+        </div>
+      </div>
     </footer>
   )
 }
