@@ -112,6 +112,6 @@ export const pricingPage = (c: Context) => {
 
       <Footer />
     </div>,
-    { title: 'Transparent Pricing', description: 'Transparent, flat-rate pricing for individual and business tax preparation. No hidden fees. Written estimates before we begin.' }
+    { title: 'Transparent Pricing', description: 'Transparent, flat-rate pricing for tax preparation, bookkeeping, accounting, and government contracting. No hidden fees. (407) 810-5368' }
   )
 }

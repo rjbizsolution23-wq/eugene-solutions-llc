@@ -72,7 +72,7 @@ export const accessibilityPage = (c: Context) => {
               </div>
               <div class="bg-gray-50 rounded-xl p-4 border border-gray-100">
                 <i class="fa-solid fa-tty text-blue-600 mr-2"></i>
-                <strong>TTY:</strong> Oregon Relay 7-1-1
+                <strong>TTY:</strong> Florida Relay 7-1-1
               </div>
             </div>
           </div>

@@ -1,22 +1,33 @@
 // Eugene Solutions LLC — Global Site Configuration
 // Build Date: February 23, 2026
+// Source: https://eugenesolutionsllc.net/
 
 export const COMPANY = {
   name: "Eugene Solutions LLC",
-  tagline: "America's Most Trusted Tax Preparation Agency",
-  subTagline: "IRS Authorized E-File Provider • PTIN Verified • GLBA Compliant",
-  phone: "(555) 394-8362",
-  email: "info@eugenesolutions.com",
+  tagline: "Your Complete Accounting, Tax & Financial Solutions Partner",
+  subTagline: "IRS Authorized E-File Provider | PTIN Verified | GLBA Compliant",
+  phone: "(407) 810-5368",
+  phoneRaw: "4078105368",
+  email: "Support@Eugenesolutionsllc.net",
+  website: "https://eugenesolutionsllc.net",
+  newSite: "https://eugenesolutions.com",
   address: {
-    street: "123 Main Street, Suite 200",
-    city: "Eugene",
-    state: "OR",
-    zip: "97401",
-    full: "123 Main Street, Suite 200, Eugene, OR 97401"
+    region: "Southeast United States",
+    serviceArea: "All 50 States (Virtual) | Southeast Physical Locations",
+    full: "Southeast Region — Serving All 50 States Virtually"
   },
   hours: {
-    taxSeason: "Mon–Sat 8AM–9PM, Sun 10AM–6PM",
-    offSeason: "Mon–Fri 9AM–5PM"
+    monday: "9:00 AM — 5:00 PM",
+    tuesday: "9:00 AM — 5:00 PM",
+    wednesday: "9:00 AM — 5:00 PM",
+    thursday: "9:00 AM — 5:00 PM",
+    friday: "9:00 AM — 5:00 PM",
+    saturday: "By Appointment",
+    sunday: "By Appointment",
+    standard: "Mon–Fri 9:00 AM — 5:00 PM",
+    weekends: "Sat–Sun By Appointment",
+    taxSeason: "Mon–Sat 8:00 AM — 9:00 PM, Sun 10:00 AM — 6:00 PM (Jan 15 – Apr 15)",
+    offSeason: "Mon–Fri 9:00 AM — 5:00 PM | Sat–Sun By Appointment"
   },
   social: {
     facebook: "https://facebook.com/eugenesolutionsllc",
@@ -30,15 +41,17 @@ export const COMPANY = {
     glba: "GLBA Safeguards Rule Compliant",
     wisp: "Written Information Security Plan Active",
     insurance: "E&O Insurance Active",
-    irs_circular_230: "Subject to IRS Circular 230"
+    irs_circular_230: "Subject to IRS Circular 230",
+    coverage: "Certified to Service All 50 States"
   },
-  disclaimer: `IRS Circular 230 Disclosure: Eugene Solutions LLC is a licensed tax preparation agency. Information provided on this website is for general informational purposes only and does not constitute tax advice. Tax situations vary. Consult a qualified tax professional before making tax decisions. Eugene Solutions LLC is subject to IRS Circular 230.`,
-  privacy_disclosure: `Eugene Solutions LLC collects and safeguards your personal and financial information in accordance with the Gramm-Leach-Bliley Act (GLBA) and the FTC Safeguards Rule. We do not sell your personal information. See our full Privacy Notice for details.`
+  disclaimer: `IRS Circular 230 Disclosure: Eugene Solutions LLC is a licensed tax preparation and accounting services agency. Information provided on this website is for general informational purposes only and does not constitute tax, legal, or accounting advice. Tax situations vary — consult a qualified tax professional before making financial decisions. Eugene Solutions LLC is subject to IRS Circular 230.`,
+  privacy_disclosure: `Eugene Solutions LLC collects and safeguards your personal and financial information in accordance with the Gramm-Leach-Bliley Act (GLBA) and the FTC Safeguards Rule. We do not sell your personal information. See our full Privacy Notice for details.`,
+  referral: "Ask about our referral program today! Refer a friend and earn rewards."
 }
 
 export const PRICING = {
   individual: [
-    { form: "1040 (Simple – W-2 only)", price: 175, description: "Single or MFJ, W-2 income only" },
+    { form: "1040 (Simple — W-2 only)", price: 175, description: "Single or MFJ, W-2 income only" },
     { form: "1040 (Standard)", price: 250, description: "Itemized deductions, multiple W-2s" },
     { form: "1040 (Complex)", price: 350, description: "Multiple income sources, credits" },
     { form: "1040 + Schedule A", price: 320, description: "Itemized deductions" },
@@ -63,102 +76,177 @@ export const PRICING = {
     { service: "Prior Year Return (per year)", price: 275, note: "" },
     { service: "Bank Product (RAC)", price: 45, note: "" },
     { service: "Refund Transfer", price: 45, note: "" },
+    { service: "Government Contracting Consultation", price: 300, note: "per hour" },
   ]
 }
 
 export const SERVICES = [
   {
-    id: "individual-tax",
-    title: "Individual Tax Preparation",
-    icon: "fa-solid fa-user",
-    emoji: "👤",
-    description: "Expert preparation of Form 1040 and all schedules. We maximize your refund while ensuring full IRS compliance.",
-    features: ["All 1040 schedules", "EITC optimization", "OBBBA deductions (tips, overtime)", "E-file same day", "Audit protection"]
+    id: "tax-preparation",
+    title: "Tax Preparation",
+    icon: "fa-solid fa-file-invoice-dollar",
+    emoji: "📋",
+    description: "Expert preparation of Form 1040 and all schedules for individuals and families. We maximize your refund while ensuring full IRS compliance. Rely on us for your state income tax returns, tax audit help, and most importantly, maximizing your return.",
+    features: [
+      "All 1040 schedules (A, B, C, D, E, SE)",
+      "EITC & Child Tax Credit optimization",
+      "State income tax returns — all 50 states",
+      "Same-day IRS e-filing",
+      "Tax audit assistance",
+      "Refund maximization guaranteed"
+    ],
+    extendedDescription: "Checklist to help Taxpayers choose Tax Preparer — visit IRS.gov for guidance.",
+    irsLink: "https://www.irs.gov/newsroom/heres-a-short-checklist-to-help-taxpayers-choose-a-tax-preparer-for-the-upcoming-filing-season"
+  },
+  {
+    id: "bookkeeping",
+    title: "Bookkeeping",
+    icon: "fa-solid fa-book-open",
+    emoji: "📚",
+    description: "Bookkeeping is an essential part of money management in business. Bookkeepers are in charge of day-to-day tactical tasks — they record and track a company's financial transactions to ensure that records are accurate and well-organized, taking you out of the task.",
+    features: [
+      "Day-to-day financial transaction recording",
+      "Accurate record organization",
+      "Monthly bookkeeping services",
+      "Payroll processing & compliance",
+      "941/944 quarterly filing",
+      "W-2/1099 issuance",
+      "QuickBooks integration"
+    ]
+  },
+  {
+    id: "accounting",
+    title: "Accounting",
+    icon: "fa-solid fa-calculator",
+    emoji: "🧮",
+    description: "Accounting is the future of finance. An accountant is essential in a company — they keep track of income and expenses and maintain statutory compliance, which can help in future business decisions.",
+    features: [
+      "Income & expense tracking",
+      "Statutory compliance management",
+      "Financial statement preparation",
+      "Business decision support",
+      "Tax planning & strategy",
+      "Year-end financial reviews"
+    ]
+  },
+  {
+    id: "government-contracting",
+    title: "Government Contracting",
+    icon: "fa-solid fa-landmark",
+    emoji: "🏛️",
+    description: "We specialize in delivering comprehensive government contracting services targeted to the specific requirements of businesses seeking to engage with federal, state, or local government entities. Our staff specializes in negotiating the complexity of government procurement processes, ensuring regulatory compliance, and optimizing prospects for successful bids.",
+    features: [
+      "Federal, state & local contracting",
+      "Government procurement navigation",
+      "Regulatory compliance assurance",
+      "Bid optimization & strategy",
+      "Contract execution support",
+      "SAM.gov registration assistance"
+    ]
   },
   {
     id: "business-tax",
     title: "Business Tax Returns",
     icon: "fa-solid fa-building",
     emoji: "🏢",
-    description: "Comprehensive business tax preparation for sole proprietors, S-Corps, partnerships, and C-Corps.",
-    features: ["Schedule C through 1120", "Entity selection advice", "Payroll tax compliance", "Quarterly estimates", "Multi-state filings"]
+    description: "Comprehensive business tax preparation for sole proprietors, S-Corps, partnerships, C-Corps, and non-profits. We specialize in personal, state, and business income tax returns, ensuring your business runs efficiently.",
+    features: [
+      "Schedule C through Form 1120",
+      "S-Corp (1120-S) & Partnership (1065)",
+      "Entity selection advice",
+      "Payroll tax compliance",
+      "Quarterly estimates",
+      "Multi-state filings — all 50 states"
+    ]
   },
   {
     id: "tax-planning",
     title: "Tax Planning & Strategy",
     icon: "fa-solid fa-chart-line",
     emoji: "📊",
-    description: "Year-round proactive tax planning to minimize your tax liability legally and maximize savings.",
-    features: ["Year-round planning", "Retirement planning", "Investment tax strategy", "OBBBA optimization", "Business structure review"]
+    description: "Year-round proactive tax planning to minimize your tax liability legally and maximize savings. We'll help you develop a funding strategy from the ground up so you can achieve your personal and professional goals.",
+    features: [
+      "Year-round proactive planning",
+      "Retirement planning",
+      "Investment tax strategy",
+      "Business structure optimization",
+      "Funding strategy development",
+      "Personal & professional goal alignment"
+    ]
   },
   {
     id: "irs-representation",
     title: "IRS Audit Representation",
     icon: "fa-solid fa-shield-halved",
     emoji: "🛡️",
-    description: "Licensed professional representation before the IRS for audits, appeals, and collections.",
-    features: ["Power of Attorney (2848)", "Audit defense", "Offer in Compromise", "Installment agreements", "Penalty abatement"]
-  },
-  {
-    id: "bookkeeping",
-    title: "Bookkeeping & Payroll",
-    icon: "fa-solid fa-book",
-    emoji: "📚",
-    description: "Monthly bookkeeping and payroll processing to keep your business financially organized all year.",
-    features: ["Monthly bookkeeping", "Payroll processing", "941/944 filing", "W-2/1099 issuance", "QuickBooks integration"]
+    description: "Licensed professional representation before the IRS for audits, appeals, and collections. Don't face the IRS alone — our experts negotiate on your behalf.",
+    features: [
+      "Power of Attorney (Form 2848)",
+      "Full audit defense",
+      "Offer in Compromise",
+      "Installment agreements",
+      "Penalty abatement",
+      "Back tax resolution"
+    ]
   },
   {
     id: "itin-services",
     title: "ITIN & Notary Services",
     icon: "fa-solid fa-globe",
     emoji: "🌐",
-    description: "IRS-approved Certifying Acceptance Agent for ITIN applications. Serving all communities.",
-    features: ["W-7 ITIN applications", "CAA certified", "Document certification", "Multi-language support", "Notary services"]
+    description: "IRS-approved Certifying Acceptance Agent for ITIN applications. Serving all communities with multi-language support.",
+    features: [
+      "W-7 ITIN applications",
+      "CAA certified agent",
+      "Document certification",
+      "Multi-language support",
+      "Notary services"
+    ]
   }
 ]
 
 export const TESTIMONIALS = [
   {
-    name: "Maria Gonzalez",
+    name: "Maria G.",
     role: "Small Business Owner",
-    quote: "Eugene Solutions found deductions I never knew existed. My refund was $3,200 more than what I got last year with TurboTax. Absolutely worth every penny.",
+    quote: "Eugene Solutions found deductions I never knew existed. My refund was $3,200 more than what I got last year. They really know how to maximize every dollar you deserve.",
     rating: 5,
     result: "$3,200 additional refund"
   },
   {
-    name: "David Chen",
-    role: "Freelance Developer",
-    quote: "As a self-employed contractor, my taxes are complicated. The team at Eugene Solutions handled everything — Schedule C, estimated payments, home office deduction. Stress-free.",
+    name: "David C.",
+    role: "Freelance Contractor",
+    quote: "As a self-employed contractor, my taxes are complicated. The team handled everything — Schedule C, estimated payments, home office deduction. Completely stress-free.",
     rating: 5,
     result: "100% IRS compliance"
   },
   {
-    name: "Sandra Williams",
+    name: "Sandra W.",
     role: "Retiree",
     quote: "I was being audited and terrified. Eugene Solutions represented me before the IRS and resolved everything. They saved me over $8,000 in penalties. True professionals.",
     rating: 5,
     result: "$8,000+ in penalties saved"
   },
   {
-    name: "James Mitchell",
+    name: "James M.",
     role: "S-Corp Owner",
-    quote: "Switched from H&R Block to Eugene Solutions for my S-Corp returns. The difference in quality is night and day. They actually understand business tax law.",
+    quote: "Switched to Eugene Solutions for my S-Corp returns. The difference in quality is night and day. They actually understand business tax law and government contracting requirements.",
     rating: 5,
     result: "Optimized S-Corp distributions"
   },
   {
-    name: "Patricia Ramirez",
+    name: "Patricia R.",
     role: "Single Mother",
     quote: "They helped me claim EITC and child tax credits I didn't even know I qualified for. Got my refund in 10 days. My kids' lives changed because of this team.",
     rating: 5,
     result: "EITC + CTC optimized"
   },
   {
-    name: "Robert Thompson",
-    role: "Real Estate Investor",
-    quote: "Managing rental properties across three states — Eugene Solutions handled all my Schedule E filings flawlessly. Multi-state expertise is rare and they nail it.",
+    name: "Robert T.",
+    role: "Government Contractor",
+    quote: "Eugene Solutions helped me navigate government contracting requirements and ensured all my tax filings were compliant. Their expertise across all 50 states is unmatched.",
     rating: 5,
-    result: "Multi-state compliance"
+    result: "Full government compliance"
   }
 ]
 
@@ -184,6 +272,10 @@ export const FAQ_DATA = [
     a: "Absolutely. Every preparer at Eugene Solutions LLC holds a current IRS Preparer Tax Identification Number (PTIN), renewed annually. We are an IRS-authorized e-file provider (EFIN verified) and subject to IRS Circular 230 professional standards."
   },
   {
+    q: "Do you serve all 50 states?",
+    a: "Yes! Eugene Solutions LLC is certified to cover all 50 states virtually. We also have physical locations in the Southeast region. Whether you need in-person or virtual service, we've got you covered."
+  },
+  {
     q: "What is the GLBA and why does it matter to me?",
     a: "The Gramm-Leach-Bliley Act (GLBA) is a federal law that requires financial institutions — including tax preparers — to protect your personal financial information. Eugene Solutions LLC is fully GLBA compliant, maintaining a Written Information Security Plan (WISP), AES-256 encryption, and strict access controls. Your data is safe with us."
   },
@@ -192,12 +284,20 @@ export const FAQ_DATA = [
     a: "Yes. We provide full IRS audit representation. We will prepare all documentation, communicate with the IRS on your behalf using Power of Attorney (Form 2848), and represent you at audit meetings. Our audit defense team has resolved hundreds of cases successfully."
   },
   {
+    q: "Do you offer government contracting services?",
+    a: "Yes. We specialize in delivering comprehensive government contracting services for businesses seeking to engage with federal, state, or local government entities. Our staff navigates government procurement processes, ensures regulatory compliance, and optimizes your prospects for successful bids."
+  },
+  {
     q: "Do you prepare returns for previous tax years?",
     a: "Yes. We prepare prior year returns going back up to 6 years. Each prior year return is $275. This is important for clients who need to catch up on unfiled returns or amend previous filings."
   },
   {
     q: "What if I'm self-employed or have a side hustle?",
     a: "We specialize in self-employment tax (Schedule C). We'll ensure you claim all legitimate business deductions — home office, mileage, equipment, health insurance, retirement contributions, and more. We also help with quarterly estimated tax payments to avoid underpayment penalties."
+  },
+  {
+    q: "Do you have a referral program?",
+    a: "Yes! Ask about our referral program today. Refer a friend to Eugene Solutions LLC and earn rewards. Contact us for full details on our referral incentives."
   },
   {
     q: "Do you offer payment plans for your services?",
@@ -251,6 +351,15 @@ export const BLOG_POSTS = [
     readTime: "5 min read"
   },
   {
+    slug: "government-contracting-tax-guide",
+    title: "Tax Guide for Government Contractors: What You Need to Know",
+    excerpt: "Navigate the unique tax requirements for federal, state, and local government contracts. Compliance is critical.",
+    date: "February 18, 2026",
+    author: "Eugene Solutions Tax Team",
+    category: "Government Contracting",
+    readTime: "7 min read"
+  },
+  {
     slug: "s-corp-vs-llc-tax-comparison",
     title: "S-Corp vs. LLC: Which Saves You More on Taxes?",
     excerpt: "A detailed comparison of S-Corporation and LLC tax treatment, self-employment tax savings, and when to make the switch.",
@@ -263,45 +372,41 @@ export const BLOG_POSTS = [
 
 export const TEAM_MEMBERS = [
   {
-    name: "Katherine Mitchell, EA",
-    role: "Founder & Principal Tax Advisor",
-    bio: "IRS Enrolled Agent with 20+ years of experience in individual and business tax preparation. Former IRS auditor turned taxpayer advocate.",
-    credentials: ["Enrolled Agent (EA)", "PTIN Active", "IRS Circular 230", "AFSP Participant"]
+    name: "Eugene Solutions Leadership",
+    role: "Founder & Principal",
+    bio: "Founded on the principle that all accounting and bookkeeping needs can be met in one location. We help develop funding strategies from the ground up so clients achieve their personal and professional goals.",
+    credentials: ["PTIN Active", "IRS Circular 230", "All 50 States Certified", "Government Contracting"]
   },
   {
-    name: "David Nakamura, CPA",
-    role: "Director of Business Tax Services",
-    bio: "Licensed CPA specializing in S-Corp, Partnership, and C-Corp tax returns. Expert in multi-state compliance and entity selection strategy.",
-    credentials: ["CPA (Oregon)", "PTIN Active", "S-Corp Specialist", "Multi-State Expert"]
+    name: "Tax Preparation Team",
+    role: "Senior Tax Preparers",
+    bio: "Our eager and qualified personnel work for your specific requirements. From simple W-2 returns to complex multi-entity business filings, our tax team ensures every dollar you deserve is claimed.",
+    credentials: ["PTIN Active", "EFIN Authorized", "EITC Due Diligence", "Multi-State Expert"]
   },
   {
-    name: "Elena Rodriguez",
-    role: "Senior Tax Preparer & ITIN Specialist",
-    bio: "10+ years preparing individual returns. IRS Certifying Acceptance Agent (CAA) for ITIN applications. Bilingual (English/Spanish).",
-    credentials: ["PTIN Active", "CAA Certified", "EITC Due Diligence", "Bilingual"]
+    name: "Bookkeeping & Accounting Team",
+    role: "Financial Services Specialists",
+    bio: "Day-to-day bookkeeping, payroll processing, and full accounting services. We keep track of income, expenses, and statutory compliance so you don't have to.",
+    credentials: ["QuickBooks ProAdvisor", "Payroll Compliance", "GAAP Standards", "Monthly Reporting"]
   },
   {
-    name: "Marcus Johnson",
-    role: "Tax Preparer & Client Services Manager",
-    bio: "Expert in EITC, Child Tax Credit, and education credits. Ensures every client receives the maximum legal refund.",
-    credentials: ["PTIN Active", "AFSP Record of Completion", "EITC Specialist"]
-  },
-  {
-    name: "Rachel Kim",
-    role: "Bookkeeping & Payroll Manager",
-    bio: "QuickBooks ProAdvisor managing monthly bookkeeping and payroll processing for 50+ business clients. Payroll tax compliance specialist.",
-    credentials: ["QuickBooks ProAdvisor", "PTIN Active", "Payroll Compliance"]
+    name: "Government Contracting Team",
+    role: "Procurement & Compliance Specialists",
+    bio: "Specialized in navigating the complexity of government procurement processes for federal, state, and local entities. From initial consultation to contract execution and beyond.",
+    credentials: ["Federal Procurement", "SAM.gov Registered", "Regulatory Compliance", "Bid Strategy"]
   }
 ]
 
 export const NAV_LINKS = [
   { label: "Services", href: "/services", 
     dropdown: [
-      { label: "Individual Tax Returns", href: "/services#individual-tax" },
+      { label: "Tax Preparation", href: "/services#tax-preparation" },
+      { label: "Bookkeeping", href: "/services#bookkeeping" },
+      { label: "Accounting", href: "/services#accounting" },
+      { label: "Government Contracting", href: "/services#government-contracting" },
       { label: "Business Tax Returns", href: "/services#business-tax" },
-      { label: "Tax Planning", href: "/services#tax-planning" },
+      { label: "Tax Planning & Strategy", href: "/services#tax-planning" },
       { label: "IRS Representation", href: "/services#irs-representation" },
-      { label: "Bookkeeping & Payroll", href: "/services#bookkeeping" },
       { label: "ITIN Services", href: "/services#itin-services" },
     ]
   },

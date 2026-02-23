@@ -3,9 +3,9 @@ import { jsxRenderer } from 'hono/jsx-renderer'
 export const renderer = jsxRenderer(({ children, title, description }) => {
   const pageTitle = title 
     ? `${title} | Eugene Solutions LLC` 
-    : 'Eugene Solutions LLC | IRS Authorized Tax Preparation Agency'
+    : 'Eugene Solutions LLC | Tax Preparation, Bookkeeping, Accounting & Government Contracting'
   const pageDescription = description || 
-    'Eugene Solutions LLC — America\'s most trusted IRS-authorized tax preparation agency. Expert individual and business tax returns, year-round planning, and audit representation.'
+    'Eugene Solutions LLC — Your complete accounting, tax & financial solutions partner. Tax preparation, bookkeeping, accounting, and government contracting services. Serving all 50 states. (407) 810-5368'
 
   return (
     <html lang="en">
@@ -14,14 +14,17 @@ export const renderer = jsxRenderer(({ children, title, description }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
-        <meta name="keywords" content="tax preparation, IRS authorized, tax agency, Eugene OR, 1040, business taxes, tax planning, EITC, e-file" />
+        <meta name="keywords" content="tax preparation, bookkeeping, accounting, government contracting, IRS authorized, Eugene Solutions LLC, tax agency, e-file, 1040, business taxes, tax planning, EITC, all 50 states" />
         <meta name="author" content="Eugene Solutions LLC" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://eugenesolutions.com" />
         
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:site_name" content="Eugene Solutions LLC" />
+        <meta property="og:url" content="https://eugenesolutions.com" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -74,13 +77,19 @@ export const renderer = jsxRenderer(({ children, title, description }) => {
         <link href="/static/style.css" rel="stylesheet" />
       </head>
       <body class="font-inter bg-white text-gray-900 antialiased">
-        {/* IRS Circular 230 Compliance Banner */}
-        <div class="bg-blue-950 text-white text-xs py-2 px-4 text-center leading-relaxed">
+        {/* Skip Navigation — ADA WCAG 2.1 AA */}
+        <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+        {/* IRS Circular 230 Compliance Banner — Required on ALL pages */}
+        <div class="bg-blue-950 text-white text-xs py-2 px-4 text-center leading-relaxed" role="banner" aria-label="IRS Circular 230 compliance notice">
           <span class="font-semibold">IRS Circular 230 Notice:</span>{' '}
-          Eugene Solutions LLC is a licensed tax preparation agency. Information on this site is for general purposes only and does not constitute tax advice.{' '}
-          <a href="/privacy" class="underline hover:text-blue-200 ml-1">Privacy Notice (GLBA)</a>
+          Eugene Solutions LLC is a licensed tax preparation and accounting services agency. Information on this site is for general purposes only and does not constitute tax, legal, or accounting advice.{' '}
+          <a href="/privacy" class="underline hover:text-blue-200 ml-1">Privacy Notice (GLBA)</a>{' '}|{' '}
+          <a href="tel:4078105368" class="underline hover:text-blue-200">(407) 810-5368</a>
         </div>
-        {children}
+        <main id="main-content">
+          {children}
+        </main>
         <script src="/static/app.js"></script>
       </body>
     </html>

@@ -26,7 +26,7 @@ export const termsPage = (c: Context) => {
 
           <div>
             <h2 class="text-2xl font-black text-gray-900 mb-4 font-space">2. Tax Preparation Services</h2>
-            <p class="text-gray-600 leading-relaxed mb-4">Eugene Solutions LLC provides tax preparation, tax planning, bookkeeping, and related financial services. By engaging our services, you agree that:</p>
+            <p class="text-gray-600 leading-relaxed mb-4">Eugene Solutions LLC provides tax preparation, tax planning, bookkeeping, accounting, government contracting, and related financial services. By engaging our services, you agree that:</p>
             <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
               <li>You will provide complete, accurate, and truthful information for your tax return</li>
               <li>You are responsible for reviewing your completed tax return before signing</li>
@@ -84,7 +84,7 @@ export const termsPage = (c: Context) => {
           <div>
             <h2 class="text-2xl font-black text-gray-900 mb-4 font-space">9. Dispute Resolution</h2>
             <p class="text-gray-600 leading-relaxed">
-              Any disputes arising from these Terms or our Services shall first be addressed through good-faith negotiation. If unresolved, disputes shall be submitted to binding arbitration in Lane County, Oregon, under the rules of the American Arbitration Association. The prevailing party shall be entitled to reasonable attorneys' fees.
+              Any disputes arising from these Terms or our Services shall first be addressed through good-faith negotiation. If unresolved, disputes shall be submitted to binding arbitration in the State of Florida, under the rules of the American Arbitration Association. The prevailing party shall be entitled to reasonable attorneys' fees.
             </p>
           </div>
 
