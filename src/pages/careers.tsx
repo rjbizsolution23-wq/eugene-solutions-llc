@@ -25,21 +25,21 @@ export const careersPage = (c: Context) => {
             {
               title: "Seasonal Tax Preparer",
               type: "Seasonal (Jan–Apr)",
-              location: "Eugene, OR — In-Office",
+              location: "Southeast Region — In-Office",
               requirements: ["Active PTIN required", "2+ years tax preparation experience", "IRS AFSP or EA preferred", "EITC due diligence knowledge", "Excellent client communication skills"],
               desc: "Prepare individual Form 1040 returns including all schedules. Handle EITC, CTC, and education credit returns with due diligence compliance."
             },
             {
               title: "Senior Business Tax Preparer",
               type: "Full-Time",
-              location: "Eugene, OR — In-Office / Hybrid",
+              location: "Southeast Region — In-Office / Hybrid",
               requirements: ["Active PTIN required", "CPA or EA preferred", "5+ years business tax experience", "S-Corp, Partnership, C-Corp expertise", "Multi-state filing experience"],
               desc: "Prepare complex business returns (1120-S, 1065, 1120) and provide entity selection guidance. Work with our business clients year-round."
             },
             {
               title: "Client Services Coordinator",
               type: "Full-Time",
-              location: "Eugene, OR — In-Office",
+              location: "Southeast Region — In-Office",
               requirements: ["Customer service experience", "Tax office experience preferred", "Organizational skills", "Bilingual (English/Spanish) preferred", "Comfortable with technology"],
               desc: "Manage client intake, scheduling, document collection, and front-desk operations. First point of contact for all clients."
             }

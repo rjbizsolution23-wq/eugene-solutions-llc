@@ -370,7 +370,7 @@ export const portalBilling = (c: Context) => {
           {[
             { id: "INV-2025-001", date: "Feb 28, 2026", desc: "2025 Form 1040 + Schedule A", amount: "$320.00", status: "Pending", color: "amber" },
             { id: "INV-2024-003", date: "Mar 15, 2025", desc: "2024 Form 1040 (Standard)", amount: "$250.00", status: "Paid", color: "emerald" },
-            { id: "INV-2024-002", date: "Mar 15, 2025", desc: "State Return — Oregon", amount: "$75.00", status: "Paid", color: "emerald" },
+            { id: "INV-2024-002", date: "Mar 15, 2025", desc: "State Return — Florida", amount: "$75.00", status: "Paid", color: "emerald" },
             { id: "INV-2023-001", date: "Apr 2, 2024", desc: "2023 Form 1040 (Simple)", amount: "$175.00", status: "Paid", color: "emerald" },
           ].map((inv) => (
             <div class="px-6 py-4 flex items-center hover:bg-gray-50">
