@@ -25,13 +25,13 @@ export const renderer = jsxRenderer(({ children, title, description }) => {
         <meta property="og:description" content={pageDescription} />
         <meta property="og:site_name" content="Eugene Solutions LLC" />
         <meta property="og:url" content="https://eugenesolutions.com" />
-        <meta property="og:image" content="https://eugenesolutions.com/images/logo.png" />
+        <meta property="og:image" content="https://eugenesolutions.com/images/og-image.png" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
-        <meta name="twitter:image" content="https://eugenesolutions.com/images/logo.png" />
+        <meta name="twitter:image" content="https://eugenesolutions.com/images/og-image.png" />
 
         {/* Additional SEO */}
         <meta name="theme-color" content="#0f172a" />
