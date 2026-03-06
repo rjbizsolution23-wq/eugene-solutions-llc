@@ -8,8 +8,8 @@ export const Navbar: FC = () => {
         <div class="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="/" class="flex items-center group" aria-label="Eugene Solutions LLC - Home">
-            <div class="bg-blue-950 text-white font-black text-xl px-3 py-2 rounded-lg mr-3 font-space tracking-tight group-hover:bg-emerald-600 transition-colors">ES</div>
-            <div>
+            <img src="/images/logo.png" alt="Eugene Solutions LLC" class="h-14 w-auto mr-3" />
+            <div class="hidden">
               <div class="nav-text font-black text-lg font-space leading-tight text-white">Eugene Solutions</div>
               <div class="nav-subtext text-xs font-medium leading-tight text-blue-200">LLC &middot; Tax &middot; Accounting &middot; Contracting</div>
             </div>
@@ -94,8 +94,8 @@ export const Footer: FC = () => {
           {/* Brand */}
           <div class="lg:col-span-1">
             <div class="flex items-center mb-4">
-              <div class="bg-white text-blue-950 font-black text-xl px-3 py-2 rounded-lg mr-3 font-space">ES</div>
-              <div>
+              <img src="/images/logo.png" alt="Eugene Solutions LLC" class="h-14 w-auto mr-3" />
+              <div class="hidden">
                 <div class="font-black text-lg font-space">Eugene Solutions</div>
                 <div class="text-blue-300 text-xs">LLC &middot; Tax &middot; Accounting &middot; Contracting</div>
               </div>

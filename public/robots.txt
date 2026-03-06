@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eugenesolutions.com/sitemap.xml
+
+Host: https://eugenesolutions.com

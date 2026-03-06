@@ -25,11 +25,17 @@ export const renderer = jsxRenderer(({ children, title, description }) => {
         <meta property="og:description" content={pageDescription} />
         <meta property="og:site_name" content="Eugene Solutions LLC" />
         <meta property="og:url" content="https://eugenesolutions.com" />
-        
+        <meta property="og:image" content="https://eugenesolutions.com/images/logo.png" />
+
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content="https://eugenesolutions.com/images/logo.png" />
+
+        {/* Additional SEO */}
+        <meta name="theme-color" content="#0f172a" />
+        <link rel="icon" type="image/png" href="/images/logo.png" />
 
         {/* Tailwind CSS */}
         <script src="https://cdn.tailwindcss.com"></script>
@@ -75,6 +81,36 @@ export const renderer = jsxRenderer(({ children, title, description }) => {
 
         {/* Custom styles */}
         <link href="/static/style.css" rel="stylesheet" />
+
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AccountingService",
+          "name": "Eugene Solutions LLC",
+          "image": "https://eugenesolutions.com/images/logo.png",
+          "description": "Your complete accounting, tax & financial solutions partner. Tax preparation, bookkeeping, accounting, and government contracting services.",
+          "telephone": "+1-407-810-5368",
+          "email": "Support@Eugenesolutionsllc.net",
+          "url": "https://eugenesolutions.com",
+          "areaServed": {
+            "@type": "Country",
+            "name": "United States"
+          },
+          "serviceType": ["Tax Preparation", "Bookkeeping", "Accounting", "Government Contracting"],
+          "priceRange": "$$",
+          "openingHours": "Mo-Fr 09:00-17:00",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Southeast United States",
+            "addressCountry": "US"
+          },
+          "sameAs": [
+            "https://facebook.com/eugenesolutionsllc",
+            "https://twitter.com/eugenesolutions",
+            "https://linkedin.com/company/eugene-solutions-llc",
+            "https://instagram.com/eugenesolutions"
+          ]
+        })}} />
       </head>
       <body class="font-inter bg-white text-gray-900 antialiased">
         {/* Skip Navigation — ADA WCAG 2.1 AA */}
